@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Headless WordPress Base Setup
+
+* This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+* Additional packages to support [Faust.js](https://faustjs.org) and WordPress have been added to the base Next.js setup.
+
 
 ## Getting Started
 

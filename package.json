@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "sync-types": "faust generatePossibleTypes",
+    "dev": "faust dev",
+    "build": "fause build",
+    "start": "fause start",
+    "lint": "next lint",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "plugin-build": "wp-scripts build",
+    "plugin-format": "wp-scripts format"
   },
   "dependencies": {
     "@apollo/client": "^3.9.11",
@@ -15,9 +19,10 @@
     "@faustwp/core": "^3.0.1",
     "@wordpress/block-library": "^8.33.0",
     "@wordpress/components": "^27.4.0",
+    "@wordpress/scripts": "^27.7.0",
     "classnames": "^2.5.1",
     "graphql": "^16.8.1",
-    "next": "14.2.2",
+    "next": "^14.2.3",
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.75.0"
@@ -28,6 +33,11 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.2",
+    "next-secure-headers": "^2.2.0",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10"
   }
 }
