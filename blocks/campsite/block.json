@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "trailhead/campsite",
+	"version": "0.1.0",
+	"title": "Campsite",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Describes a campsite",
+	"example": {},
+	"supports": {
+		"html": false,
+		"renaming": false
+	},
+	"textdomain": "campsite",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"title": {
+			"type": "string"
+		},
+		"copy": {
+			"type": "rich-text",
+			"default": "welcome to the woods"
+		},
+		"message": {
+			"type": "string",
+			"source": "html",
+			"selector": "div"
+		}
+	}
+}

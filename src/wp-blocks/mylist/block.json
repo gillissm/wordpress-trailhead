@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "trailhead/mylist",
+	"version": "0.1.0",
+	"title": "My List",
+	"category": "widgets",
+	"description": "Display a copyright message",
+	"icon": "plugins-checked",
+	"example": {
+		"attributes": {
+			"title": "hello world",
+			"copy": "This is the copy",
+			"message": "read more"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"title": {
+			"type": "string"
+		},
+		"copy": {
+			"type": "rich-text",
+			"default": "welcome to the woods"
+		},
+		"message": {
+			"type": "string",
+			"source": "html",
+			"selector": "div"
+		}
+	},
+	"textdomain": "my-list",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

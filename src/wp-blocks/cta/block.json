@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "trailhead/cta",
+	"version": "0.1.0",
+	"title": "cta",
+	"category": "widgets",
+	"icon": "welcome-view-site",
+	"description": "cta",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"headline": {
+			"type": "rich-text",
+			"default": "cta Message"
+		}
+	},
+	"textdomain": "cta",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

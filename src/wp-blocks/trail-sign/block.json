@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "trailhead/trail-sign",
+	"version": "0.1.0",
+	"title": "Trail Sign",
+	"category": "widgets",
+	"icon": "table-row-before",
+	"description": "Details about a trail",
+	"example": {
+		"attributes": {
+			"copy": "Enter the Trail Details",
+			"distance": "3",
+			"difficulty": "easy"
+		}
+	},
+	"supports": {
+		"html": false,
+		"renaming": false
+	},
+	"textdomain": "trail-sign",
+	"attributes": {
+		"copy": {
+			"type": "string",
+			"default": "describe the hike"
+		},
+		"miles": {
+			"type": "string"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

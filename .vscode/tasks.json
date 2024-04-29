@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "plugin-build",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: plugin-build",
+			"detail": "wp-scripts build --webpack-src-dir=src/wp-blocks --output-path=blocks"
+		}
+	]
+}
